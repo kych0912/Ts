@@ -1,3 +1,4 @@
+"use strict";
 var 이름 = { grade: "A" };
 var 이름2 = 123;
 var 이름3 = 123;
@@ -43,3 +44,25 @@ var 동물1 = {
 var 출생지역 = { region: "seoul", country: "korea" };
 출생지역.region = "busan";
 var 여친 = { name: "kim" };
+//literal type
+//kim만 들어올 수 있음
+var 이름1;
+var 이름12;
+이름1 = 'kim';
+var array; //union type
+//literal type 은 const 변수 업글버전
+//const에 여러개 저장
+var 가위바위보 = "가위";
+var 자료 = {
+    name: "kim",
+};
+function 내함수2(x) {
+    return x;
+}
+//내함수2(자료.name); Error!
+내함수2(자료.name);
+//as const는 자료를 완전히 잠근다.
+//readonly, object value를 literal type으로 변환
+var 자료2 = {
+    name: "kim",
+};

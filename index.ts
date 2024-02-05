@@ -85,4 +85,32 @@ type PositionY = {y:number};
 //object 타입 합치기
 type NewType = PositionX&PositionY;
 
+//literal type
+//kim만 들어올 수 있음
+let 이름1:'kim';
+let 이름12:'kim'|'park'|'lee';
+이름1 = 'kim';
+
+let array:("가위"| "바위" | "보")[] //union type
+
+//literal type 은 const 변수 업글버전
+//const에 여러개 저장
+const 가위바위보:"가위"|"바위"|"보" = "가위";
+
+var 자료 = {
+    name:"kim",
+}
+
+function 내함수2(x:"kim"){
+    return x;
+}
+
+//내함수2(자료.name); Error!
+내함수2(자료.name as "kim");
+
+//as const는 자료를 완전히 잠근다.
+//readonly, object value를 literal type으로 변환
+var 자료2 = {
+    name:"kim",
+} as const;
  
