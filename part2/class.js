@@ -1,6 +1,11 @@
 "use strict";
 var UserP = /** @class */ (function () {
     // name:string; 에러
+    //same
+    //public name:string;
+    //constructor(name:string){
+    //    this.name = name;
+    //}
     function UserP(name) {
         this.name = name;
     }

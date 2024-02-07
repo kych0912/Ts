@@ -1,6 +1,11 @@
 class UserP{
     // name:string; 에러
     
+    //same
+    //public name:string;
+    //constructor(name:string){
+    //    this.name = name;
+    //}
 
     constructor(public name:string){
 
