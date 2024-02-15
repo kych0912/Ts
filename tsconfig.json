@@ -3,5 +3,7 @@
         "target":"es5",
         "module":"commonjs",
         "strict":true,
+        "declaration":true,
+        "typeRoots": ["part2/test.d.ts/types/common/type.ts","node_modules/@types"],
     }
 }
