@@ -11,3 +11,5 @@ var aObj = 'age';
 var Par;
 var ParNum;
 var item = '10';
+var item2 = 10;
+var item3 = '10';

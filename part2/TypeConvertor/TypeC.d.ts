@@ -26,3 +26,8 @@ declare let Par: AgePar<string>;
 declare let ParNum: AgePar<number>;
 type FirstItem<T> = T extends any[] ? T[0] : any;
 declare let item: FirstItem<[string, number]>;
+type ArrayItem<T> = T extends (infer U)[] ? U : never;
+declare let item2: ArrayItem<[string, number]>;
+declare let item3: ArrayItem<string[]>;
+type 타입추출<T> = T extends (() => infer U) ? U : never;
+type avoid = 타입추출<() => string>;
